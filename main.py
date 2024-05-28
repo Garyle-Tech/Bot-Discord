@@ -27,7 +27,7 @@ async def hello(ctx):
 
 # command 
 # command ini untuk menyapa user yang menggunakan command !hai-bot
-@bot.command()
+@bot.command(name='hai-bot')
 async def hai_bot(ctx):
     for member in members:
         if member.id == ctx.author.id:
